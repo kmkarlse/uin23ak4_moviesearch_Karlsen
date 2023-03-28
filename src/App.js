@@ -7,14 +7,13 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [movies, setMovies] = useState([])
+  const [search, setSearch] = useState("James+bond")
 
   const getMovies = async() => {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=49196d2b&s=James+Bond&type=movie`)
+    const response = await fetch(`http://www.omdbapi.com/?apikey=49196d2b&s=${search}&type=movie`)
     const data = await response.json()
 
     setMovies(data.Search)
-   
-
   }
 
   console.log(movies)
@@ -26,7 +25,7 @@ function App() {
 
   return (
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout getMovies={getMovies} setSearch={setSearch} />}>
           <Route index element={<Main movies={movies} setMovies={setMovies} /> }/>
         </Route>
       </Routes>

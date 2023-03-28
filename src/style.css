@@ -1,9 +1,69 @@
 
-.container {
-
-
+img {
+    width: 100%;
+    max-width: 200px;
 }
 
-.MovieCard{
+#root {
+    background-color: #0A3342;
+}
+
+.container {
+    width: 100%;
+    max-width: 1035px;
+    background-color: #fff;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #BEC9DF;
+}
+
+.search {
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+}
+
+h1 {
+    color: black;
+}
+
+main {
     display: flex;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+form button {
+    height: 50px;
+    width: 50px;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.movie-list h2 {
+    width: 100%;
+}
+
+.movie-list a {
+    display: inherit;
+    color: black;
+}
+
+.list {
+    max-width: 200px;
+    background-color: #94A3B8;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
 }
