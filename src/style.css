@@ -6,6 +6,7 @@ img {
 
 #root {
     background-color: #0A3342;
+    min-height: 100vh;
 }
 
 .container {
@@ -18,6 +19,7 @@ img {
     padding: 2rem;
     margin: 0 auto;
     background-color: #BEC9DF;
+    min-width: 100vh;
 }
 
 .search {
